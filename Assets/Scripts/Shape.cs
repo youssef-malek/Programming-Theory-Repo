@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shape : MonoBehaviour
+public abstract class Shape : MonoBehaviour
 {
     private int ID_sahpe;
     protected string ShapeName;
@@ -13,5 +13,12 @@ public class Shape : MonoBehaviour
     {
 
     }
+    public virtual string GetName()
+    {
+        return "Shape";
+    }
 
+
+
+    protected abstract double GetArea();
 }

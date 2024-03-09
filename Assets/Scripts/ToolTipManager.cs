@@ -29,10 +29,10 @@ public class ToolTipManager : MonoBehaviour
         transform.position = Input.mousePosition;
     }
 
-    public void SetAndShowTooltip(string message)
+    public void SetAndShowTooltip(string message, double area)
     {
         gameObject.SetActive(true);
-        toolTip.text = "This is a: " + message;
+        toolTip.text = "{ " + message + " <> Surface Area = " + area + " m2} ";
     }
     public void HideTooltip()
     {
